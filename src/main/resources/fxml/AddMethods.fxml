@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andrewhun.object.controllers.AddMethodsController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="665.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="createObject" layoutX="405.0" layoutY="606.0" mnemonicParsing="false" onAction="#createObject" text="Create Object" />
+            <CheckBox fx:id="classMethod" layoutX="28.0" layoutY="152.0" mnemonicParsing="false" text="Class method (static)?" />
+            <Button fx:id="backToVariables" layoutX="145.0" layoutY="606.0" mnemonicParsing="false" onAction="#backToPreviousPage" text="Back" />
+            <Label layoutX="249.0" layoutY="35.0" text="Add Methods">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="80.0" text="Access modifier:" />
+            <ChoiceBox fx:id="accessModifier" layoutX="28.0" layoutY="113.0" prefWidth="150.0" />
+            <Label layoutX="259.0" layoutY="80.0" text="Data type:" />
+            <ChoiceBox fx:id="dataType" layoutX="211.0" layoutY="113.0" prefWidth="150.0" />
+            <Label layoutX="462.0" layoutY="80.0" text="Name:" />
+            <TextField fx:id="methodName" layoutX="405.0" layoutY="113.0" />
+            <CheckBox fx:id="constant" layoutX="212.0" layoutY="152.0" mnemonicParsing="false" text="Constant?" />
+            <Button fx:id="addMethod" layoutX="265.0" layoutY="244.0" mnemonicParsing="false" onAction="#addElement" text="Add to list" />
+            <Label layoutX="35.0" layoutY="332.0" text="Methods:" />
+            <ListView fx:id="displayedMethods" layoutX="110.0" layoutY="316.0" prefHeight="200.0" prefWidth="426.0" />
+            <Button fx:id="removeMethods" layoutX="242.0" layoutY="554.0" mnemonicParsing="false" onAction="#removeElements" text="Remove method(s)" />
+            <Label fx:id="methodError" layoutX="103.0" layoutY="200.0" prefHeight="17.0" prefWidth="409.0" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

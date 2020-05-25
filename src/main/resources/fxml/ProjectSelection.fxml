@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andrewhun.object.controllers.ProjectSelectionController">
+   <children>
+      <Button fx:id="addNewProject" layoutX="256.0" layoutY="287.0" mnemonicParsing="false" onAction="#addNewProject" text="Add New Project" />
+      <Button layoutX="265.0" layoutY="200.0" mnemonicParsing="false" text="Select Project" />
+      <ComboBox layoutX="234.0" layoutY="144.0" prefWidth="150.0" />
+      <Label layoutX="147.0" layoutY="148.0" text="Select Project:" />
+      <Label layoutX="241.0" layoutY="30.0" text="Project Selection">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

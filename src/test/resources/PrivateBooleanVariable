@@ -1,0 +1,4 @@
+public class PrivateBooleanVariable {
+
+	private Boolean privateBoolean;
+}

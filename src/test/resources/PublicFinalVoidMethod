@@ -1,0 +1,7 @@
+public class PublicFinalVoidMethod {
+
+	public final void publicFinalVoid() {
+
+		return ;
+	}
+}

@@ -1,0 +1,14 @@
+public class StaticReadWriteStringVariable {
+
+	private static String staticReadWriteString;
+
+	public static String getStaticReadWriteString() {
+
+		return staticReadWriteString;
+	}
+
+	public static void setStaticReadWriteString(String staticReadWriteString) {
+
+		this.staticReadWriteString = staticReadWriteString;
+	}
+}

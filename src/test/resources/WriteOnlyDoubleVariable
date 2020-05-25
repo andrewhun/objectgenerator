@@ -1,0 +1,9 @@
+public class WriteOnlyDoubleVariable {
+
+	private Double writeOnlyDouble;
+
+	public void setWriteOnlyDouble(Double writeOnlyDouble) {
+
+		this.writeOnlyDouble = writeOnlyDouble;
+	}
+}

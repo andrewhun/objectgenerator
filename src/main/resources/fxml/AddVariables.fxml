@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andrewhun.object.controllers.AddVariablesController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="675.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="249.0" layoutY="39.0" text="Add variables">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="variableName" layoutX="416.0" layoutY="115.0" />
+            <Button fx:id="submitVariables" layoutX="338.0" layoutY="580.0" mnemonicParsing="false" onAction="#submitElements" text="Next" />
+            <Label layoutX="16.0" layoutY="293.0" text="Variables:" />
+            <Label layoutX="37.0" layoutY="79.0" text="Access rights:" />
+            <Label layoutX="261.0" layoutY="79.0" text="Data type" />
+            <Label layoutX="477.0" layoutY="79.0" text="Name" />
+            <Button fx:id="addVariable" layoutX="252.0" layoutY="197.0" mnemonicParsing="false" onAction="#addElement" text="Add to list" />
+            <Button fx:id="backToName" layoutX="205.0" layoutY="580.0" mnemonicParsing="false" onAction="#backToPreviousPage" text="Back" />
+            <CheckBox fx:id="constant" layoutX="236.0" layoutY="155.0" mnemonicParsing="false" text="Constant?" />
+            <ChoiceBox fx:id="accessRight" layoutX="37.0" layoutY="115.0" prefHeight="25.0" prefWidth="149.0" />
+            <ChoiceBox fx:id="dataType" layoutX="225.0" layoutY="115.0" prefHeight="25.0" prefWidth="157.0" />
+            <CheckBox fx:id="classVariable" layoutX="41.0" layoutY="155.0" mnemonicParsing="false" text="Class variable (static)?" />
+            <Label fx:id="variableDetailError" layoutX="79.0" layoutY="254.0" prefHeight="17.0" prefWidth="416.0" />
+            <ListView fx:id="displayedVariables" layoutX="92.0" layoutY="285.0" prefHeight="200.0" prefWidth="406.0" />
+            <Button fx:id="removeVariables" layoutX="237.0" layoutY="516.0" mnemonicParsing="false" onAction="#removeElements" text="Remove variable(s)" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
