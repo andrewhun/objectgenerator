@@ -2,6 +2,7 @@ package com.andrewhun.object.models;
 
 import com.andrewhun.object.util.NamedConstants;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.nio.file.Files;
@@ -17,6 +18,16 @@ public class JavaContentFactoryTest {
     private static final String METHOD = "Method";
     private static final String VARIABLE = "Variable";
     private static final String TEST_RESOURCE_PATH = "src/test/resources/";
+
+    /*
+    Since Travis CI is erroring out on one of the cases due to a remnant variable, I need to have this
+    here as a catch-all.
+    */
+    @BeforeEach
+    void setUp() {
+
+        tearDown();
+    }
 
     @AfterEach
     protected void tearDown() {
