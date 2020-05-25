@@ -1,0 +1,10 @@
+language: java
+jdk: openjdk13
+services:
+  - xvfb
+cache:
+  directories:
+    - $home/.m2
+install: true
+script:
+  - mvn clean test
