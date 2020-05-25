@@ -7,13 +7,14 @@ Hello there folks. It has been a really long time since my last commit on GitHub
 What I have built is a very basic Java object (class) generator app. It allows users to add variables and method stubs to their objects. The resulting objects are stored as metadata and an actual Java file is also produced. The system includes a self-growing aspects because the objects you create also become available as data types.
 
 Now that I am typing this out, I think that it sounds pretty good. There are some major flaws with in the app though. Some of these are listed below, although they are just a small subset of the problems I have with the implementation:
--Objects are not associated with a program or even a package. The app just spits them out, and users then need to integrate them into their apps manually
--The app does not handle anything beyond basic Java classes. No interfaces, enums, abstract classes, etc. can be produced with it
--You cannot specify a default value for your variables
--You cannot add parameters to your methods
--You cannot add collection variables (lists, arrays, maps, sets, etc.) to your objects
--As usual, the GUI has way too many pages users need to navigate through
--The app does not have a coherent error-handling strategy in place
+- Objects are not associated with a program or even a package. The app just spits them out, and users then need to integrate them into their apps manually
+
+- The app does not handle anything beyond basic Java classes. No interfaces, enums, abstract classes, etc. can be produced with it
+- You cannot specify a default value for your variables
+- You cannot add parameters to your methods
+- You cannot add collection variables (lists, arrays, maps, sets, etc.) to your objects
+- As usual, the GUI has way too many pages users need to navigate through
+- The app does not have a coherent error-handling strategy in place
 
 The most pressing concern from my point of view is definitely the fact that the app largely lives in its own little world. Ideally I would like users to be able to create objects and start using them in their own apps immediately. Unfortunately, this will require some serious design changes.
 
